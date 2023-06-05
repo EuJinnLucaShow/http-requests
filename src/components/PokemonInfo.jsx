@@ -39,7 +39,12 @@ export default class PokemonInfo extends Component {
     const { pokemonName } = this.props;
 
     if (status === 'idle') {
-      return <div>Введите имя покемона.</div>;
+      return (
+        <div>
+          Введите имя покемона. Bulbasaur Ivysaur Venusaur Charmander Charmeleon
+          Charizard Squirtle Wartortle Blastoise Caterpie
+        </div>
+      );
     }
 
     if (status === 'pending') {
