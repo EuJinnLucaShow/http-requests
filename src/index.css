@@ -35,3 +35,19 @@ button {
     transform: rotate(359deg);
   }
 }
+
+.react-icon {
+  display: block;
+  margin: 30px auto;
+  width: 25%;
+  animation: icon-spin 20s infinite linear;
+}
+
+@keyframes react-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

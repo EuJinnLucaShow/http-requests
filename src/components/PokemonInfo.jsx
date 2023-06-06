@@ -3,6 +3,7 @@ import PokemonDataView from './PokemonDataView';
 import PokemonErrorView from './PokemonErrorView';
 import PokemonPendingView from './PokemonPendingView';
 import pokemonAPI from '../services/pokemon-api';
+import ReactIcon from './ReactIcon.svg';
 
 const Status = {
   IDLE: 'idle',
@@ -43,6 +44,7 @@ export default class PokemonInfo extends Component {
         <div>
           Enter the name of the Pokémon. Bulbasaur Ivysaur Venusaur Charmander
           Charmeleon Charizard Squirtle Wartortle Blastoise Caterpie
+          <img className="react-icon" src={ReactIcon} alt="react-icon" />
         </div>
       );
     }
