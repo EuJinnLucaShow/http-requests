@@ -15,13 +15,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div
-        className="App-header"
-        style={{ maxWidth: 1170, margin: '0 auto', padding: 20 }}
-      >
+      <div className="App-header">
+        <ToastContainer autoClose={3000} />
         <PokemonForm onSubmit={this.handleFormSubmit} />
         <PokemonInfo pokemonName={this.state.pokemonName} />
-        <ToastContainer autoClose={3000} />
       </div>
     );
   }

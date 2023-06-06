@@ -18,7 +18,7 @@ export default class PokemonForm extends Component {
 
     if (this.state.pokemonName.trim() === '') {
       toast('Enter the name of the Pokémon.', {
-        position: toast.POSITION.BOTTOM_CENTER,
+        position: toast.POSITION.TOP_RIGHT,
         icon: '🤔',
       });
       return;
