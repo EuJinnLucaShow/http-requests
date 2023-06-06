@@ -30,7 +30,7 @@ export default class PokemonInfo extends Component {
           .fetchPokemon(nextName)
           .then(pokemon => this.setState({ pokemon, status: Status.RESOLVED }))
           .catch(error => this.setState({ error, status: Status.REJECTED }));
-      }, 3000);
+      }, 1000);
     }
   }
 
