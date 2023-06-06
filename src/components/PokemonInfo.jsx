@@ -26,12 +26,10 @@ export default class PokemonInfo extends Component {
     if (prevName !== nextName) {
       this.setState({ status: Status.PENDING });
 
-      setTimeout(() => {
-        pokemonAPI
-          .fetchPokemon(nextName)
-          .then(pokemon => this.setState({ pokemon, status: Status.RESOLVED }))
-          .catch(error => this.setState({ error, status: Status.REJECTED }));
-      }, 1000);
+      pokemonAPI
+        .fetchPokemon(nextName)
+        .then(pokemon => this.setState({ pokemon, status: Status.RESOLVED }))
+        .catch(error => this.setState({ error, status: Status.REJECTED }));
     }
   }
 
