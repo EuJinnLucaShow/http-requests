@@ -13,7 +13,7 @@ const styles = {
 
 export default function PokemonPendingView({ pokemonName }) {
   const pokemon = {
-    name: pokemonName,
+    // name: pokemonName,
     sprites: {
       other: {
         'official-artwork': {
@@ -28,7 +28,7 @@ export default function PokemonPendingView({ pokemonName }) {
     <div role="alert">
       <div style={styles.spinner}>
         <ImSpinner size="32" className="icon-spin" />
-        Loading...
+        Loading... {pokemonName}
       </div>
       <PokemonDataView pokemon={pokemon} />
     </div>
