@@ -5,4 +5,8 @@ import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
 
-createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
