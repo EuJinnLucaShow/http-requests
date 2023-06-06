@@ -41,8 +41,8 @@ export default class PokemonInfo extends Component {
     if (status === 'idle') {
       return (
         <div>
-          Введите имя покемона. Bulbasaur Ivysaur Venusaur Charmander Charmeleon
-          Charizard Squirtle Wartortle Blastoise Caterpie
+          Enter the name of the Pokémon. Bulbasaur Ivysaur Venusaur Charmander
+          Charmeleon Charizard Squirtle Wartortle Blastoise Caterpie
         </div>
       );
     }

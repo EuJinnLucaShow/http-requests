@@ -17,7 +17,7 @@ export default class PokemonForm extends Component {
     event.preventDefault();
 
     if (this.state.pokemonName.trim() === '') {
-      toast('Введите имя покемона.', {
+      toast('Enter the name of the Pokémon.', {
         position: toast.POSITION.TOP_CENTER,
         icon: '🤔',
       });
@@ -39,7 +39,7 @@ export default class PokemonForm extends Component {
         />
         <button type="submit">
           <ImSearch style={{ marginRight: 8 }} />
-          Найти
+          Search
         </button>
       </form>
     );
